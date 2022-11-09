@@ -1,0 +1,65 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/project/tools/c'
+g++ -o procctl procctl.cpp
+cp procctl ../bin/.
+ 
+g++ -g -o checkproc checkproc.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp checkproc ../bin/.
+g++ -g -o gzipfiles gzipfiles.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp gzipfiles ../bin/.
+g++ -g -o deletefiles deletefiles.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp deletefiles ../bin/.
+g++ -g -o ftpgetfiles ftpgetfiles.cpp -I/project/public /project/public/_public.cpp /project/public/libftp.a /project/public/_ftp.cpp -lm -lc
+cp ftpgetfiles ../bin/.
+g++ -g -o ftpputfiles ftpputfiles.cpp -I/project/public /project/public/_public.cpp /project/public/libftp.a /project/public/_ftp.cpp -lm -lc
+cp ftpputfiles ../bin/.
+g++ -g -o tcpputfiles tcpputfiles.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp tcpputfiles ../bin/.
+g++ -g -o fileserver fileserver.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp fileserver ../bin/.
+g++ -g -o tcpgetfiles tcpgetfiles.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp tcpgetfiles ../bin/.
+g++ -g -o execsql execsql.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp execsql ../bin/.
+g++ -g -o dminingmysql dminingmysql.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp dminingmysql ../bin/.
+g++ -g -o xmltodb xmltodb.cpp _tools.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp xmltodb ../bin/.
+g++ -g -o syncupdate syncupdate.cpp _tools.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp syncupdate ../bin/.
+g++ -g -o syncincrement syncincrement.cpp _tools.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp syncincrement ../bin/.
+g++ -g -o syncincrementex syncincrementex.cpp _tools.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp syncincrementex ../bin/.
+ 
+g++ -g -o deletetable deletetable.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp deletetable ../bin/.
+g++ -g -o migratetable migratetable.cpp _tools.cpp -I/project/public /project/public/_public.cpp -I/usr/local/mysql/include  -I/project/public/db/mysql -L/usr/local/mysql/lib -lmysqlclient /project/public/db/mysql/_mysql.cpp -lm -lc
+cp migratetable ../bin/.
+g++ -g -o xmltodb_oracle xmltodb_oracle.cpp _tools_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp xmltodb_oracle ../bin/.
+ 
+g++ -g -o deletetable_oracle deletetable_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp deletetable_oracle ../bin/.
+g++ -g -o migratetable_oracle migratetable_oracle.cpp _tools_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp migratetable_oracle ../bin/.
+g++ -g -o dminingoracle dminingoracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp dminingoracle ../bin/.
+ 
+g++ -g -o syncupdate_oracle syncupdate_oracle.cpp _tools_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp syncupdate_oracle ../bin/.
+g++ -g -o syncincrement_oracle syncincrement_oracle.cpp _tools_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp syncincrement_oracle ../bin/.
+g++ -g -o syncincrementex_oracle syncincrementex_oracle.cpp _tools_oracle.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+cp syncincrementex_oracle ../bin/.
+g++ -g -o webserver webserver.cpp -I/project/public /project/public/_public.cpp -I/rdbms/public -I/project/public/db/oracle -L/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lpthread -lm -lc
+cp webserver ../bin/.
+g++ -g -o inetd inetd.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp inetd ../bin/.
+ 
+g++ -g -o rinetd rinetd.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp rinetd ../bin/.
+g++ -g -o rinetdin rinetdin.cpp -I/project/public /project/public/_public.cpp -lm -lc
+cp rinetdin ../bin/.
+make: Leaving directory `/project/tools/c'
+ 

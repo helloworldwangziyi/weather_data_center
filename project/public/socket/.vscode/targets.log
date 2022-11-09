@@ -1,0 +1,572 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 2010  Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Thu Jul 14 15:05:36 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /root/.vscode-server
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 3.82
+# makefile
+CURDIR := /project/public/socket
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# environment
+VSCODE_CWD = /root
+# environment
+SSH_CONNECTION = 223.88.73.83 65261 10.0.8.11 22
+# environment
+PATH = /root/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+# environment
+XDG_RUNTIME_DIR = /run/user/0
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver check-symlink
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /project/public/socket
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-297c6e13-e2e3-4026-a6e9-aafadd3c1674.sock
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+HISTTIMEFORMAT = %F %T 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /root
+# environment
+LOGNAME = root
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = VM-8-11-centos
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 5
+# environment
+XDG_SESSION_ID = 65767
+# environment
+USER = root
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# environment
+SSH_CLIENT = 223.88.73.83 65261 22
+# environment
+MAIL = /var/spool/mail/root
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /root/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# environment
+PROMPT_COMMAND = history -a; history -a; 
+# automatic
+<F = $(notdir $<)
+# environment
+TST_HACK_BASH_SESSION_ID = 86098572178956
+# environment
+LC_ALL = C
+# automatic
+ 
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+HISTSIZE = 3000
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=62/1024=6%, Rehash=0, Collisions=6/84=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64769, inode 1572983): 61 files, no impossibilities.
+
+# 61 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+demo01.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-24 11:15:36
+#  File has been updated.
+#  Successfully updated.
+
+demo04: demo04.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:17:57
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 15):
+	g++ -g -o demo04 demo04.cpp -lm -lc
+
+# Not a target:
+demo07.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-23 09:04:22
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo10.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-01 16:17:26
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo33.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-24 16:22:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo02.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-26 22:10:34
+#  File has been updated.
+#  Successfully updated.
+
+all: demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 demo11 demo12 demo13 demo14 demo31 demo32 demo33 demo20 demo26 demo27 demo28 tcpselect client tcppoll tcpepoll
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo11.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-03 13:07:55
+#  File has been updated.
+#  Successfully updated.
+
+demo28: demo28.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:05
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 63):
+	g++ -g -o demo28 demo28.cpp -I/project/public /project/public/_public.cpp -I/oracle/home/rdbms/public -I/project/public/db/oracle -L/oracle/home/lib -L. -lclntsh /project/public/db/oracle/_ooci.cpp -lm -lc
+ 
+
+demo31: demo31.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:02
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 45):
+	g++ -g -o demo31 demo31.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo08.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-23 09:04:35
+#  File has been updated.
+#  Successfully updated.
+
+demo14: demo14.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:02
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 42):
+	g++ -g -o demo14 demo14.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo12.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-03 10:32:04
+#  File has been updated.
+#  Successfully updated.
+
+tcppoll: tcppoll.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-22 16:51:29
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 72):
+	g++ -g -o tcppoll tcppoll.cpp ../_public.cpp -lm -lc
+
+demo32: demo32.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:02
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 48):
+	g++ -g -o demo32 demo32.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tcpepoll.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-25 22:59:35
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo20.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-08 16:07:28
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo03.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-27 12:09:16
+#  File has been updated.
+#  Successfully updated.
+
+demo06: demo06.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:17:58
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 21):
+	g++ -g -o demo06 demo06.cpp ../_public.cpp -lm -lc
+
+demo07: demo07.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-23 09:09:14
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 24):
+	g++ -g -o demo07 demo07.cpp ../_public.cpp -lm -lc
+
+demo08: demo08.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-23 09:09:15
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 27):
+	g++ -g -o demo08 demo08.cpp ../_public.cpp -lm -lc
+
+tcpselect: tcpselect.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-22 16:51:28
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 69):
+	g++ -g -o tcpselect tcpselect.cpp ../_public.cpp -lm -lc
+
+client: client.cpp
+#  Implicit rule search has not been done.
+ 
+#  Last modified 2021-12-25 09:03:36
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 66):
+	g++ -g -o client client.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-21 23:13:18
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo04.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-27 12:09:22
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo26.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-03 20:37:17
+#  File has been updated.
+#  Successfully updated.
+
+demo01: demo01.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-24 11:15:38
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 6):
+	g++ -g -o demo01 demo01.cpp -lm -lc
+
+# Not a target:
+demo13.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-04 11:19:46
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo05.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-27 16:35:03
+#  File has been updated.
+#  Successfully updated.
+
+demo10: demo10.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:00
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 30):
+	g++ -g -o demo10 demo10.cpp ../_public.cpp -lm -lc
+
+demo33: demo33.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:03
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 51):
+	g++ -g -o demo33 demo33.cpp ../_public.cpp -lm -lc
+
+demo02: demo02.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-11 20:53:07.434728679
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 9):
+	g++ -g -o demo02 demo02.cpp -lm -lc
+
+# Not a target:
+demo27.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-02 10:55:55
+#  File has been updated.
+#  Successfully updated.
+
+demo11: demo11.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:00
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 33):
+	g++ -g -o demo11 demo11.cpp ../_public.cpp -lm -lc
+
+demo12: demo12.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:01
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 36):
+	g++ -g -o demo12 demo12.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+demo20: demo20.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:03
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 54):
+	g++ -g -o demo20 demo20.cpp ../_public.cpp -lpthread -lm -lc
+
+demo03: demo03.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:17:57
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 12):
+	g++ -g -o demo03 demo03.cpp -lm -lc
+
+# Not a target:
+client.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-25 09:03:35
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from `makefile', line 78):
+	rm -f demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 demo11 demo12
+	rm -f demo13 demo14 demo31 demo32 demo33 demo20 demo26 demo27 demo28 tcpselect client
+	rm -f tcppoll tcpepoll
+
+tcpepoll: tcpepoll.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-25 23:05:45
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 75):
+	g++ -g -o tcpepoll tcpepoll.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo28.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-05 10:04:55
+#  File has been updated.
+#  Successfully updated.
+
+demo26: demo26.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:04
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 57):
+	g++ -g -o demo26 demo26.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo31.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-24 16:23:05
+#  File has been updated.
+#  Successfully updated.
+
+demo13: demo13.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:01
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 39):
+	g++ -g -o demo13 demo13.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo14.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-04 11:20:01
+#  File has been updated.
+#  Successfully updated.
+
+demo05: demo05.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:17:58
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 18):
+	g++ -g -o demo05 demo05.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+tcppoll.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 10:51:26
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tcpselect.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 10:51:11
+#  File has been updated.
+#  Successfully updated.
+
+demo27: demo27.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-21 21:18:04
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from `makefile', line 60):
+	g++ -g -o demo27 demo27.cpp ../_public.cpp -lm -lc
+
+# Not a target:
+demo32.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-24 11:01:33
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+demo06.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-27 16:35:52
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=53/1024=5%, Rehash=0, Collisions=9/136=7%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0 / lookups = 170 / hits = 170
+# # of strcache buffers: 1 (* 8176 B/buffer = 8176 B)
+# strcache used: total = 0 (676) / max = 0 / min = 8176 / avg = 0
+# strcache free: total = 0 (7500) / max = 0 / min = 8176 / avg = 0
+
+# strcache hash-table stats:
+# Load=67/8192=1%, Rehash=0, Collisions=1/170=1%
+# Finished Make data base on Thu Jul 14 15:05:36 2022
+
+ 
